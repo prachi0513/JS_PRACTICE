@@ -23,3 +23,12 @@ function x() {
 }
 
 x()
+
+
+function x(){
+    console.log("hello")
+}
+
+setTimeout(function(){
+    console.log("setTimeout")
+}, 3000);
