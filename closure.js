@@ -1,7 +1,5 @@
-
-//scope chaining
+// scope chaining
 function a() {
-   
     b()
     function b() {
         c()
@@ -13,20 +11,26 @@ function a() {
 let v = 10;
 a()
 
-//closure scope 
-
+//closure
 function fun () {
     let a  = 10 ;
 
     function y (){
         console.log(a);
     }
-
     return y
 }
 
 
- let z = fun();
- z();
+//  let z = fun();
+//  z();
 
+//  let v = 10;
+
+//  function fun(){
+//     console.log(v);
+//     v = 20
+//  }
+
+//  fun()
 
