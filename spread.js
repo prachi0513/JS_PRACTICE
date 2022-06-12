@@ -8,6 +8,8 @@ let b = {
     }
 }
 
+//shalow copy
+
 let com = {...b}
 com.name = "vhee"
 com.second.name="chikoo-vats"
