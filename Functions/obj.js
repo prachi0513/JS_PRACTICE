@@ -2,7 +2,6 @@ let obj = [
   { name: "prachi", age: 18 },
   { name: "juan", age: 22 },
 ];
-
 function getObj() {
   setTimeout(() => {
     obj.map((ele) => {
@@ -10,16 +9,13 @@ function getObj() {
     });
   }, 1000);
 }
-
 function addObj(newObj, cb) {
   setTimeout(() => {
     obj.push(newObj);
     cb();
   }, 2000);
 }
-
 // addObj({ name: "ashii", age: 18 }, getObj);
-
 let dataObj = new Promise((resolve, reject) => {
   let data = [
     {
@@ -42,7 +38,6 @@ let dataObj = new Promise((resolve, reject) => {
     reject("promiss was rejected");
   }
 });
-
 dataObj
   .then((data) => {
     console.log("data received from server ---> ", data);
@@ -50,13 +45,3 @@ dataObj
   .catch((data) => {
     console.log("Failed to load data");
   });
-
-function delay(ms) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, ms);
-  });
-}
-
-delay(3000).then((data) => {
-  console.log("after 3 seconds");
-});
