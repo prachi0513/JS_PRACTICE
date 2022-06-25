@@ -73,4 +73,11 @@ Promise.all([video1, video2]).then((messages) => {
   console.log(messages);
 });
 
+async function fun(){
+  return "hello"
+}
+
+let a = fun()
+console.log(a);
+
 
